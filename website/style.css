@@ -1,0 +1,119 @@
+/*
+    Author: Abdelrahman Hany
+    Created on: 22-Sep-21
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background: antiquewhite;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(120px, auto);
+    max-height: 100vh;
+    color: black;
+    background: #FFB6C1;
+    justify-content: center;
+    grid-gap: 1em;
+    width: 400px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding: 50px;
+}
+
+.entry{
+    font-family: 'Oswald', sans-serif;
+    min-height: 90px;
+    padding: 8px;
+    font-size: 13px;
+    background: #ffffe0;
+    position: relative;
+}
+
+.entry .title {
+    position: absolute;
+}
+
+.err {
+    display: block;
+    color: blue;
+}
+
+#entryHolder  {
+    padding-top: 20px;
+}
+
+div#date {
+    font-size: 13px;
+    font-weight: 200;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+
+label{
+    display:block;
+}
+
+input{
+    display:block;
+    background: #ffffe0;
+    font-family: 'Oswald', sans-serif;
+    padding: 8px;
+    position: relative;
+    font-size: 13px;
+}
+
+button{
+    background: limegreen;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background: #ffffe0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: black;
+    height: 60px;
+    padding: 8px;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: black; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: black; 
+    font-family: 'Oswald', sans-serif;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: black; 
+    font-family: 'Oswald', sans-serif;
+}  
